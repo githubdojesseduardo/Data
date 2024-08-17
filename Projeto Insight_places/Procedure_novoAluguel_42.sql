@@ -49,5 +49,5 @@ END$$
 DELIMITER ;
 
 CALL novoAluguel_42('10011','Gabriela Pires','8635','2023-04-05',5,40);
-SELECT * FROM alugueis WHERE aluguel_id ='10011'
+SELECT * FROM alugueis WHERE aluguel_id ='10016'
 

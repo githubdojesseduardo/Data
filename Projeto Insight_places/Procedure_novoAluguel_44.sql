@@ -30,7 +30,7 @@ BEGIN
         SELECT cliente_id INTO vCliente FROM clientes WHERE nome = vClienteNome;
         INSERT INTO alugueis VALUES (vAluguel, vCliente, vHospedagem, vDataInicio, 
         vDataFinal, vPrecoTotal);
-        SET vMensagem = CONCAT( 'Aluguel incluido na base com sucesso. - ID' +vAluguel);
+        SET vMensagem = CONCAT( 'Aluguel incluido na base com sucesso. - ID' , vAluguel);
         SELECT vMensagem;
     WHEN vNumCliente > 1 THEN
        SET vMensagem = 'Este cliente não pode ser usado para incluir o aluguel porque não existe.';
@@ -39,5 +39,10 @@ BEGIN
 END $$
 DELIMITER ;
 
-CALL novoAluguel_44('Livia Fogaça', '8635', '2023-05-15', 5,45);
-SELECT * FROM alugueis WHERE
+CALL novoAluguel_44('Livia Fogaça', '8635', '2023-12-24', 5,45);
+CALL novoAluguel_44('Livia Fogaça', '123', '2023-12-31', 5, 45.00);
+
+SELECT * FROM alugueis WHERE aluguel_id ='10027'
+DELETE FROM alugueis  WHERE aluguel_id ='10015'
+SELECT * FROM HOSPEDAGENS 
+SELECT * FROM alugueis

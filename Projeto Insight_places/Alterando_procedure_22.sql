@@ -5,7 +5,7 @@ DELIMITER $$
 USE `insight_places`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_21`()
 BEGIN
-	DECLARE vAluguel    VARCHAR(10) DEFAULT 10001;
+    DECLARE vAluguel    VARCHAR(10) DEFAULT 10001;
     DECLARE vCliente    VARCHAR(10)  DEFAULT 1002;
     DECLARE vHospedagem VARCHAR(10) DEFAULT 8635;
     DECLARE vDataInicio DATE DEFAULT '2023-03-01';
@@ -24,7 +24,7 @@ DELIMITER $$
 USE `insight_places`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_22`()
 BEGIN
-	DECLARE vAluguel    VARCHAR(10) DEFAULT 10001;
+    DECLARE vAluguel    VARCHAR(10) DEFAULT 10001;
     DECLARE vCliente    VARCHAR(10)  DEFAULT 1002;
     DECLARE vHospedagem VARCHAR(10) DEFAULT 8635;
     DECLARE vDataInicio DATE DEFAULT '2023-03-01';
